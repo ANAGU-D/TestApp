@@ -1,0 +1,82 @@
+.form-container{
+    position:inherit;
+    display: flex;
+    padding-top: 3%;
+    padding-left: 10%;
+    flex-direction: column;
+}
+.heading2 h3{
+    text-align: center;
+    justify-content: center;
+    padding-bottom: 3%;
+    color:var(--color);
+}
+.form-container p{
+    padding-bottom: 2%;
+    font-weight: 500;
+}
+.form-container2{
+   box-sizing: border-box;
+   box-shadow: 2px 2px 2px 2px rgb(214, 214, 221);
+   width: 70%;
+   justify-content: center;
+   padding: 50px 50px;
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+   
+  
+}
+.form-container2 input{
+    padding: 12px 10px;
+    margin-right:2%;
+    width: 100%;   
+    background-color: rgb(248, 239, 239);
+    border: rgb(224, 208, 208) solid 1px;
+    outline: blue;
+    
+}
+form{
+    padding-left: 10%;
+    padding-right: 2%;
+    
+}
+.name {
+    display: flex;
+    flex-direction: row;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.email{
+    padding-top: 2%;
+    width: 98%;
+}
+
+  label {display: block; padding: 5px; position: relative; padding-left: 20px;}
+label input {display: none;}
+label span {border: 1px solid #ccc;  padding: 20% 20%;   box-sizing: border-box; appearance: none; line-height: 1; text-align: center;  font-size: 10pt; left: 0; top: 50%; margin-top: -7.5px;}
+input:checked + span {background: var(--color); border-color: #ccf; color: white;}
+.gender{
+    display: flex;
+    flex-direction: row;
+    padding-top: 2%;
+}
+
+
+
+/* 
+input[type='radio'] {
+    
+    
+    background: white;
+    outline: 2px solid #333 1px;
+   
+    cursor: pointer;
+}
+input[type='radio']:checked {
+    
+  }
+  .gender-cont{
+    padding-top: 4%;
+  } */
