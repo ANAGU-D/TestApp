@@ -1,0 +1,16 @@
+
+.header-container{
+    width: 100%;
+    height: 15vh;
+    background-color: rgba(226, 214, 190, 0.8);
+    justify-content: center;
+    color: rgb(3, 3, 32);
+}
+.header-container h1{
+    font-weight: 700;
+    padding-top: 2%;
+    padding-left: 10%;
+    justify-content: flex-start;
+    color: rgb(81, 81, 119);
+
+}
