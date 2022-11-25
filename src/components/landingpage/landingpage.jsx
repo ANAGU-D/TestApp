@@ -12,7 +12,7 @@ const Landingpage = ()=>{
                          <p>It takes less than 20 minutes to write or update your legal will, for free.</p>
                         </div>
                         <div className="btn">
-                            <a href="/body">
+                            <a href="output">
                             <button>Make a Will</button>
                             </a>
                         </div>
