@@ -1,15 +1,23 @@
+import { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
 import Body from './components/body/body';
+import WillForm from './components/willForm/willForm';
 
 function App() {
+  
+  let[will, setWill] = useState('')
+
+  function handleForm(will){
+    setWill(will)
+  }
+
   return (
     <div className="App">
-     <Router>
       <Routes>
-        <Route path='/' element={<Body/>}/>
+        <Route path='/' element={<WillForm handleForm={handleForm}/>}/>
+        <Route path='/viewWill' element={<Body will={will}/>}/>
       </Routes>
-     </Router>
     </div>
   );
 }

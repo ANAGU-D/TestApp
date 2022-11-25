@@ -1,0 +1,71 @@
+body{
+  background-color: rgb(102, 102, 102);
+}
+#WillForm{
+  width: 100vw;
+  height: 100vh !important;
+}
+.slog{
+  height: 100vh;
+  background-color: aquamarine;
+}
+.slog h1, .slog h2{
+  margin: auto;
+  width: 80%;
+}
+.slog h1{
+  margin-top: 35%;
+}
+.slog h2{
+  margin-top: 10px;
+}
+#form{
+    width: 90vw;
+    max-width: 600px;
+    margin: auto;
+    margin-top: 100px;
+    /* border: 1px solid aquamarine !important; */
+}
+input, textarea, button{
+    border: 1px solid aquamarine;
+    border-radius: 5px;
+    padding: 5px !important;
+}
+input{
+    width: 100%;
+    margin: 2px !important;
+}
+.add{
+    position: absolute;
+    margin: auto;
+    bottom: -15px;
+    /* margin: 15px !important; */
+    width: 97%;
+    background-color: white;
+}
+button{
+  background-color: aquamarine !important;
+}
+#will-container div{
+  margin-bottom: 10px;
+}
+@media screen and (max-width: 900px) {
+  .slog{
+    height: 50vh;
+    padding: 10px;
+    padding-bottom: 25px;
+  }
+  .slog h1, .slog h2{
+    margin: auto;
+    width: 80%;
+  }
+  .slog h1{
+    margin-top: 10%;
+  }
+  .slog h2{
+    margin-top: 10px;
+  }
+  .WillForm{
+    margin-bottom: 50px;
+  }
+}
