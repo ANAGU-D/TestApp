@@ -1,0 +1,31 @@
+
+.output-container{
+    width: 80%;
+    padding-top: 5%;
+    margin-right: 10%;
+    margin-left: 10%;
+    margin-top: 5%;
+    box-sizing: border-box;
+    box-shadow: 2px 2px 5px 2px rgb(54, 66, 62);
+    line-height: 2;
+    padding-bottom: 3%;
+    background-color: white;
+    min-height: 100vh;
+}
+
+.legal-name{
+    text-align: center;
+}
+.into-head,
+.prop-b,
+.instruction-head{
+    padding-left: 5%;
+    padding-bottom: 2%;
+    /* padding-top: 2%; */
+}
+ul {
+    list-style:disc;
+}
+p{
+    padding-left: 3%;
+}

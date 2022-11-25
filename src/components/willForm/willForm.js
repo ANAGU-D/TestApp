@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import './willForm.css'
 
-function WillForm(props) {
+function WillForm( {handleForm} ) {
   const [count, setCount] = useState(0)
 
   function createNew(){
@@ -46,9 +46,10 @@ function WillForm(props) {
             <h1 className='text-6xl'>Time waits for Nobody,</h1>
             <h2 className='text-4xl'>Create your will Today !!</h2>
         </div>
-      <form className='bg-white p-7 drop-shadow-lg rounded-md' id='form' action='/viewWill' onSubmit={() => {
+      <form className='bg-white p-7 drop-shadow-lg rounded-md' id='form' action='/viewWill' onSubmit={(e) => {
+        e.preventDefault()
         let will = getForm()
-        props.handleForm(will)
+        handleForm(will)
       }}>
         <div className='flex justify-between w-full'>
           <div className='w-1/2 mr-2'>
