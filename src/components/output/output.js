@@ -4,7 +4,8 @@ import '../output/output.css'
 const Output =(props)=>{
     let will = {}
     useEffect(() => {
-        will = props.will
+        will = props.willO
+        console.log(will)
     })
 
     return(

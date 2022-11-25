@@ -47,7 +47,7 @@ function WillForm( {handleForm} ) {
             <h2 className='text-4xl'>Create your will Today !!</h2>
         </div>
       <form className='bg-white p-7 drop-shadow-lg rounded-md' id='form' action='/viewWill' onSubmit={(e) => {
-        e.preventDefault()
+        // e.preventDefault()
         let will = getForm()
         handleForm(will)
       }}>

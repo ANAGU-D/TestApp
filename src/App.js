@@ -12,14 +12,14 @@ function App() {
   function handleForm(will_){
     console.log(will_)
     setWill(will_)
-    console.log(will)
+    console.log(will['firstName'])
   }
 
   return (
     <div className="App">
       <Routes>
         <Route path='/' element={<WillForm handleForm={handleForm}/>}/>     
-        <Route path='/viewWill' element={<Output will={will}/>}/>
+        <Route path='/viewWill' element={<Output willO={will}/>}/>
       </Routes>
     </div>
   );
