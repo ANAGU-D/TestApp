@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
 import Body from './components/body/body';
 import Output from './components/output/output';
-import WillForm from './components/willForm/willForm';
+import WillForm from './components/willform/willform';
 
 function App() {
   
