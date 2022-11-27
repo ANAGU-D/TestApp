@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import './willform.css'
+import './willForm.css'
 
 function WillForm( {handleForm} ) {
   const [count, setCount] = useState(0)

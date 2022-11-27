@@ -3,7 +3,7 @@ import { useEffect } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import './App.css';
 import Output from './components/output/output';
-import WillForm from './components/willform/willform';
+import WillForm from './components/willForm/willForm';
 
 function App() {
   
