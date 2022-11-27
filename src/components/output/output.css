@@ -29,3 +29,12 @@ ul {
 p{
     padding-left: 3%;
 }
+@media screen and (max-width: 1000px) {
+    .output-container{
+        width: 100vw;
+        margin: auto;
+    }
+    p{
+        margin-left: 25px !important;
+    }
+}

@@ -23,8 +23,8 @@ function Output() {
                 <div className="into-head">
                     <h2 className="text-2xl  font-semibold">Introduction</h2>
                 </div>
-                <div className="into-para w-11/12 ml-20" >
-                    <p>A last will and testament or will allows a person “testator” to make a sworn statement about which person or people "beneficiary" will receive real estate and personal property after their death. Most states require two disinterested witnesses to sign in order for the will to be valid. After signing, copies should be given to all beneficiaries and the testator`s attorney.</p>
+                <div className="into-para w-11/12" >
+                    <p className=" ml-20">A last will and testament or will allows a person “testator” to make a sworn statement about which person or people "beneficiary" will receive real estate and personal property after their death. Most states require two disinterested witnesses to sign in order for the will to be valid. After signing, copies should be given to all beneficiaries and the testator`s attorney.</p>
                 </div>
             </div>
 
