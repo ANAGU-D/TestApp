@@ -1,17 +1,22 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import '../output/output.css'
 
-const Output =(props)=>{
-    let will = {}
+function Output() {
+
+    let [Will, setWill] = useState('')
+
     useEffect(() => {
-        will = props.willO
-        console.log(will)
-    })
+        const items = JSON.parse(localStorage.getItem('will'));
+        if (items) {
+           setWill(items);
+        }
+        console.log(items)
+    }, [])
 
     return(
         <div className="output-container">
             <div className="legal-name">
-                    <h1 className="text-3xl font-semibold">{will['firstName']} {will['lastName']}</h1>
+                    <h1 className="text-3xl font-semibold">{Will.firstName} {Will.lastName}</h1>
             </div>
             <hr/>
             <div className="into mt-10">
@@ -26,8 +31,8 @@ const Output =(props)=>{
             <div className="prop-b mt-8">
                 <h2 className="text-2xl  font-semibold">Properties and Beneficiary</h2>
                 <ul className="ml-12 mt-2">
-                    {will['will']?.map(will => {
-                        <li>I will my {will[0]} to {will[1]}</li>
+                    {Will.will?.map(wil => {
+                        return (<li>I will my {wil[0]} to {wil[1]}</li>)
                     })}
                 </ul>
             </div>
@@ -35,7 +40,7 @@ const Output =(props)=>{
                 <div className="instruction-head">
                     <h2 className="text-2xl  font-semibold ">Instructions</h2>
                 </div>
-                <p className="into-para w-11/12 ml-20">{will['instructions']}</p>
+                <p className="into-para w-11/12 ml-20">{Will.instructions}</p>
             </div>
         </div>
     )
